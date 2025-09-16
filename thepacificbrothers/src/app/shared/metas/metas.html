@@ -1,66 +1,19 @@
-<section id="stats" class="stats section">
-  <div class="container">
-    <div class="row gy-4">
-      <!-- Empresas Aliadas -->
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-diagram-3" style="color: var(--tpb-turquoise); font-size: 2rem"></i>
-        <div class="stats-item text-center">
-          <span
-            data-purecounter-start="0"
-            data-purecounter-end="8"
-            data-purecounter-duration="1"
-            class="purecounter"
-          ></span>
-          <p style="color: var(--tpb-navy)">Empresas Aliadas</p>
+<section class="kpi-band">
+  <div class="container py-5">
+    <div class="row g-3 g-lg-4 justify-content-center">
+      <div class="col-6 col-md-3" *ngFor="let it of items">
+        <div
+          class="kpi-card text-center p-4 mb-2"
+          [attr.data-target]="it.value"
+          [attr.data-suffix]="it.suffix || ''"
+        >
+          <div class="kpi-icon mb-2">
+            <i class="bi" [ngClass]="it.icon" aria-hidden="true"></i>
+          </div>
+          <div class="kpi-value h4 fw-bold mb-1">0</div>
+          <div class="kpi-label small fw-medium">{{ it.label }}</div>
         </div>
       </div>
-      <!-- End Stats Item -->
-
-      <!-- Puntos de Venta -->
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-shop-window" style="color: var(--tpb-turquoise); font-size: 2rem"></i>
-        <div class="stats-item text-center">
-          <span
-            data-purecounter-start="0"
-            data-purecounter-end="120"
-            data-purecounter-duration="1"
-            class="purecounter"
-          ></span>
-          <p style="color: var(--tpb-navy)">Puntos de Venta</p>
-        </div>
-      </div>
-      <!-- End Stats Item -->
-
-      <!-- Productos en Catálogo -->
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-box-seam" style="color: var(--tpb-turquoise); font-size: 2rem"></i>
-        <div class="stats-item text-center">
-          <span
-            data-purecounter-start="0"
-            data-purecounter-end="65"
-            data-purecounter-duration="1"
-            class="purecounter"
-          ></span>
-          <p style="color: var(--tpb-navy)">Productos en Catálogo</p>
-        </div>
-      </div>
-      <!-- End Stats Item -->
-
-      <!-- Mercados Internacionales -->
-      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-        <i class="bi bi-globe2" style="color: var(--tpb-turquoise); font-size: 2rem"></i>
-        <div class="stats-item text-center">
-          <span
-            data-purecounter-start="0"
-            data-purecounter-end="2"
-            data-purecounter-duration="1"
-            class="purecounter"
-          ></span>
-          <p style="color: var(--tpb-navy)">Mercados</p>
-        </div>
-      </div>
-      <!-- End Stats Item -->
     </div>
   </div>
 </section>
-<!-- /Stats Section -->

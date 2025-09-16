@@ -1,0 +1,62 @@
+/* Featured Services */
+.featured-services .service-item {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  padding: 2rem 1.25rem;
+  position: relative;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+/* franja superior con gradiente */
+.featured-services .service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--tpb-turquoise), var(--tpb-darkblue));
+}
+
+/* icono en caja */
+.featured-services .service-item .icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  background: rgba(1, 88, 113, 0.08);
+  font-size: 1.5rem;
+  color: var(--tpb-darkblue);
+  transition: all 0.2s ease;
+}
+
+/* título */
+.featured-services .service-item h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--tpb-navy) !important;
+  margin-bottom: 0.75rem;
+}
+
+/* párrafo */
+.featured-services .service-item p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0;
+}
+
+/* hover */
+.featured-services .service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+}
+.featured-services .service-item:hover .icon {
+  background: rgba(2, 200, 181, 0.1);
+  color: var(--tpb-turquoise);
+}

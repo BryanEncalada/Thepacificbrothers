@@ -1,0 +1,74 @@
+/* Franja */
+.kpi-band {
+  background: linear-gradient(135deg, #f4f7f8, #eafbfb);
+}
+
+/* Tarjeta */
+.kpi-card {
+  background: #fff; /* mejor contraste con textos oscuros */
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &::before {
+    content: '';
+    position: absolute; /* 🔧 corregido: quitado el '<' */
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--tpb-turquoise), var(--tpb-navy));
+    opacity: 0.9;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Ícono grande en círculo */
+  .kpi-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 14px;
+    background: rgba(2, 200, 181, 0.12); /* turquesa suave */
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+    i {
+      font-size: 2rem; /* más grande */
+      color: #1a73e8; /* usa tu paleta */
+      line-height: 1;
+    }
+  }
+
+  .kpi-value {
+    color: var(--tpb-navy);
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  .kpi-label {
+    color: var(--tpb-darkblue);
+    font-size: 0.92rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 575.98px) {
+  .kpi-card .kpi-icon {
+    width: 64px;
+    height: 64px;
+    i {
+      font-size: 1.6rem;
+    }
+  }
+  .kpi-card .kpi-value {
+    font-size: 1.5rem;
+  }
+}

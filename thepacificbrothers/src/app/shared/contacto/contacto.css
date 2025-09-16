@@ -1,0 +1,70 @@
+/* === Contact: tarjetas blancas con franja superior degradada === */
+.contact .info-wrap,
+.contact .php-email-form {
+  position: relative;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+/* Franja superior (como en tus cards de servicios) */
+.contact .info-wrap::before,
+.contact .php-email-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0.75rem; /* deja un pequeño inset para que se vea “suave” */
+  right: 0.75rem;
+  height: 4px;
+  background: linear-gradient(90deg, var(--tpb-turquoise), var(--tpb-navy));
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+/* Ajustes de iconos para que combinen */
+.contact .info-item i {
+  color: var(--tpb-darkblue);
+  background: linear-gradient(180deg, #eef7f7, #eafbfb);
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+/* Tipografía coherente con tu estilo */
+.contact .info-item h3 {
+  margin: 0 0 4px 0;
+  color: var(--tpb-navy);
+  font-weight: 700;
+}
+
+.contact .php-email-form label {
+  color: var(--tpb-navy);
+  font-weight: 600;
+}
+
+/* Botón (opcional: turquesa al hover) */
+.contact .php-email-form button[type='submit'] {
+  background: var(--tpb-navy);
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
+}
+.contact .php-email-form button[type='submit']:hover {
+  background: var(--tpb-darkblue);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive: separa sutilmente columnas en mobile */
+@media (max-width: 991.98px) {
+  .contact .info-wrap {
+    margin-bottom: 1rem;
+  }
+}

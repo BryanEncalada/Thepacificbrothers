@@ -1,0 +1,25 @@
+<section class="hero-video d-flex align-items-center justify-content-center">
+  <video
+    #bgVideo
+    class="hero-video__bg"
+    [attr.poster]="poster"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+  >
+    <source [attr.src]="webmSrc" type="video/webm" />
+    <source [attr.src]="mp4Src" type="video/mp4" />
+    <!-- Fallback: si no carga el video, el poster quedará visible -->
+  </video>
+
+  <!-- Capa de oscurecimiento para legibilidad -->
+  <div class="hero-video__overlay" aria-hidden="true"></div>
+
+  <!-- Contenido -->
+  <div class="container text-center hero-video__content">
+    <h1 class="display-4 fw-bold hero-title typewriter">{{ title }}</h1>
+    <p class="lead mb-0 hero-subtitle">{{ subtitle }}</p>
+  </div>
+</section>

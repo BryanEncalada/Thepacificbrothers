@@ -1,0 +1,12 @@
+.footer-newsletter {
+  background: url('/assets/img/hero-bg.jpg') center center/cover no-repeat;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Asegura que el contenido se vea arriba */
+.footer-newsletter .container {
+  position: relative;
+  z-index: 2;
+}

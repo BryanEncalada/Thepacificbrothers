@@ -6,3 +6,45 @@
   --tpb-light: #f4f7f8; /* Blanco / Gris Claro */
   --tpb-black: #000000; /* Negro */
 }
+
+.hero-title {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tpb-navy);
+  line-height: 1.05;
+}
+
+.hero-subtitle {
+  color: var(--tpb-navy);
+  font-weight: 700;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden; /* Oculta el texto mientras “escribe” */
+  white-space: nowrap; /* Evita saltos de línea */
+  border-right: 3px solid var(--tpb-turquoise); /* El cursor */
+
+  animation: typing 3s steps(22, end) 0s infinite alternate, blink 0.75s step-end infinite;
+}
+
+/* Efecto escribir */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Efecto parpadeo del cursor */
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--tpb-turquoise);
+  }
+}

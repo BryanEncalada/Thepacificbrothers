@@ -209,8 +209,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 76px;
   margin-right: 8px;
+  margin-bottom: -10px;
 }
 
 .header .logo h1 {
@@ -1955,6 +1956,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
