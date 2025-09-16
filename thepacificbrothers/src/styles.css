@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --tpb-navy: #00344d; /* Azul Marino */
+  --tpb-darkblue: #015871; /* Azul Oscuro Medio */
+  --tpb-turquoise: #02c8b5; /* Turquesa */
+  --tpb-light: #f4f7f8; /* Blanco / Gris Claro */
+  --tpb-black: #000000; /* Negro */
+}

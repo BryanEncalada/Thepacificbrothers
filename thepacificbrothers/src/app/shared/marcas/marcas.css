@@ -1,0 +1,43 @@
+/* Carrusel de clientes (logos) */
+.clients .swiper {
+  padding: 10px 0;
+}
+
+.clients .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* evita que el slide crezca por ancho de la imagen */
+  width: auto !important;
+}
+
+.clients .swiper-slide img {
+  height: auto;
+  max-height: 48px; /* 📱 móvil */
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+  padding-left: 50px;
+}
+
+@media (min-width: 576px) {
+  /* sm */
+  .clients .swiper-slide img {
+    max-height: 56px;
+  }
+}
+@media (min-width: 992px) {
+  /* lg */
+  .clients .swiper-slide img {
+    max-height: 72px;
+  }
+}
+
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.03);
+}
