@@ -9,10 +9,24 @@ import { Marcas } from './shared/marcas/marcas';
 import { Footer } from './shared/footer/footer';
 import { Contacto } from './shared/contacto/contacto';
 import { Videobanner } from './shared/videobanner/videobanner';
+import { Metas02 } from './shared/metas02/metas02';
+import { Banner02 } from './shared/banner02/banner02';
+import { Marca02 } from './shared/marca02/marca02';
+import { MarcaIzquierda } from './shared/marca-izquierda/marca-izquierda';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Banner, Nosotros, Caractericas, Metas, Marcas, Footer, Contacto, Videobanner],
+  imports: [
+    Navbar,
+    Nosotros,
+    Caractericas,
+    Footer,
+    Contacto,
+    Metas02,
+    Banner02,
+    Marca02,
+    MarcaIzquierda,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

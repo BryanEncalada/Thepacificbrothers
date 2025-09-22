@@ -1,0 +1,60 @@
+:root {
+  --hero-left-safe: clamp(24px, 7vw, 140px);
+}
+
+/* Sección con banda diagonal (conservamos tu fondo) */
+.hero-stripe {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+.hero-stripe::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 140%;
+  height: 200px;
+  transform: translateX(-10%) translateY(-20%);
+  background: linear-gradient(
+    90deg,
+    var(--tpb-turquoise),
+    var(--tpb-darkblue) 55%,
+    var(--tpb-navy)
+  );
+  clip-path: polygon(0 30%, 100% 0, 100% 62%, 0 90%);
+  z-index: 0;
+}
+.hero-stripe .position-relative {
+  position: relative;
+  z-index: 1;
+}
+
+/* Título pequeño y en una sola línea */
+.hero-title {
+  margin: 0;
+  color: var(--tpb-navy);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  font-size: clamp(1.25rem, 3.2vw, 2rem); /* ⇦ tamaño más chico */
+}
+.one-line {
+  white-space: nowrap; /* una sola línea */
+  overflow: hidden; /* no se desborda */
+  text-overflow: ellipsis; /* … si no entra */
+}
+
+/* Sangría del bloque de texto (ajústalo si quieres) */
+.hero-text-guard {
+  padding-left: 20px; /* móvil */
+}
+@media (min-width: 768px) {
+  .hero-text-guard {
+    padding-left: 50px;
+  }
+} /* md */
+@media (min-width: 1200px) {
+  .hero-text-guard {
+    padding-left: 100px;
+  }
+} /* xl */

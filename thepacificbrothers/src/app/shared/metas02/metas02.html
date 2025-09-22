@@ -1,0 +1,24 @@
+<section class="tpb-stats">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-3" *ngFor="let s of items">
+        <div class="stat-card text-center">
+          <!-- Icono -->
+          <i class="bi" [ngClass]="s.icon" aria-hidden="true"></i>
+
+          <!-- Número directo, sin animación -->
+          <div class="number hero-title">
+            <span *ngIf="s.prefix">{{ s.prefix }}</span>
+            {{ s.value }}
+            <span *ngIf="s.suffix">{{ s.suffix }}</span>
+          </div>
+
+          <!-- Etiqueta -->
+          <div class="label hero-subtitle">{{ s.label }}</div>
+
+          <div class="divider mx-auto"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

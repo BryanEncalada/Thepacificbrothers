@@ -1,0 +1,45 @@
+/* 1) Fondo sólido y limpio */
+.tpb-stats {
+  background: var(--tpb-turquoise);
+  padding: 5rem 0;
+  color: var(--tpb-light);
+}
+
+/* Tarjeta simple (sin contenedor circular para el icono) */
+.stat-card {
+  background: transparent;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.25rem;
+}
+
+.stat-card .bi {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  color: #fff; /* icono limpio */
+  margin-bottom: 0.5rem;
+}
+
+.number {
+  font-size: clamp(1.8rem, 3.8vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+  line-height: 1.05;
+}
+
+.label {
+  margin-top: 0.25rem;
+  font-size: 0.98rem;
+
+  font-weight: 400; /* más delgado */
+
+  color: #fff;
+}
+
+.divider {
+  margin-top: 0.5rem;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--tpb-turquoise), #ffffff);
+  border-radius: 99px;
+  opacity: 0.9;
+}

@@ -1,10 +1,28 @@
 .footer-newsletter {
-  background: url('/assets/img/hero-bg.jpg') center center/cover no-repeat;
-  padding: 3rem 0;
   position: relative;
+  padding: 3rem 0;
+  background: #fff; /* base limpia */
+  overflow: hidden; /* recorta la banda */
   z-index: 1;
 }
 
+/* banda diagonal al fondo */
+.footer-newsletter::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 340%;
+  height: clamp(140px, 22vw, 200px); /* alto de la banda */
+  transform: translateX(-10%) translateY(-20%);
+  background: linear-gradient(
+    90deg,
+    var(--tpb-turquoise),
+    var(--tpb-darkblue) 55%,
+    var(--tpb-navy)
+  );
+  clip-path: polygon(0 30%, 100% 0, 100% 75%, 0 92%);
+  z-index: 0;
+}
 /* Asegura que el contenido se vea arriba */
 .footer-newsletter .container {
   position: relative;
