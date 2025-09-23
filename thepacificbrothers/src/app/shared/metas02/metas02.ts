@@ -18,9 +18,9 @@ export interface StatItem {
 })
 export class Metas02 {
   @Input() items: StatItem[] = [
-    { icon: 'bi-people', label: 'Happy Clients', value: 1234 },
-    { icon: 'bi-check2-circle', label: 'Projects Completed', value: 1234 },
-    { icon: 'bi-people-fill', label: 'Dedicated Staff', value: 1234 },
-    { icon: 'bi-award', label: 'Awards Achieved', value: 1234 },
+    { icon: 'bi-people', label: 'Empresas Aliadas', value: 20 },
+    { icon: 'bi-shop', label: 'Puntos de Venta', value: 65 },
+    { icon: 'bi-box-seam', label: 'Productos en Catálogo', value: 85 },
+    { icon: 'bi-globe-americas', label: 'Mercados', value: 2 },
   ];
 }
