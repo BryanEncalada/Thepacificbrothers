@@ -17,7 +17,7 @@
     background: linear-gradient(
       90deg,
       var(--tpb-turquoise),
-      var(--tpb-darkblue) 55%,
+      var(--tpb-darkblue) 70%,
       var(--tpb-navy)
     );
     clip-path: polygon(0 30%, 100% 0, 100% 62%, 0 90%);

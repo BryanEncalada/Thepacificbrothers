@@ -12,16 +12,16 @@
   content: '';
   position: absolute;
   inset: 0 auto auto 0;
-  width: 140%;
+  width: 250%;
   height: 200px;
   transform: translateX(-10%) translateY(-20%);
   background: linear-gradient(
     90deg,
     var(--tpb-turquoise),
-    var(--tpb-darkblue) 55%,
+    var(--tpb-darkblue) 75%,
     var(--tpb-navy)
   );
-  clip-path: polygon(0 30%, 100% 0, 100% 62%, 0 90%);
+  clip-path: polygon(0 50%, 100% 0, 100% 62%, 0 90%);
   z-index: 0;
 }
 .hero-stripe .position-relative {

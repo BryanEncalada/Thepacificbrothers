@@ -11,8 +11,8 @@
   content: '';
   position: absolute;
   inset: 0 auto auto 0;
-  width: 340%;
-  height: clamp(140px, 22vw, 200px); /* alto de la banda */
+  width: 440%;
+  height: clamp(640px, 22vw, 700px); /* alto de la banda */
   transform: translateX(-10%) translateY(-20%);
   background: linear-gradient(
     90deg,
