@@ -26,6 +26,7 @@ import { MarcaIzquierda } from './shared/marca-izquierda/marca-izquierda';
     Banner02,
     Marca02,
     MarcaIzquierda,
+    Videobanner,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

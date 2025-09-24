@@ -1,4 +1,4 @@
-<section class="hero-video d-flex align-items-center justify-content-center">
+<section class="hero-video">
   <video
     #bgVideo
     class="hero-video__bg"
@@ -11,15 +11,25 @@
   >
     <source [attr.src]="webmSrc" type="video/webm" />
     <source [attr.src]="mp4Src" type="video/mp4" />
-    <!-- Fallback: si no carga el video, el poster quedará visible -->
   </video>
 
-  <!-- Capa de oscurecimiento para legibilidad -->
+  <!-- Overlay con gradiente para mejorar legibilidad (más oscuro a la izquierda) -->
   <div class="hero-video__overlay" aria-hidden="true"></div>
 
-  <!-- Contenido -->
-  <div class="container text-center hero-video__content">
-    <h1 class="display-4 fw-bold hero-title typewriter">{{ title }}</h1>
-    <p class="lead mb-0 hero-subtitle">{{ subtitle }}</p>
+  <!-- Contenido alineado a la izquierda -->
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-lg-6">
+        <div class="hero-video__content">
+          <h1 class="hero-title">The Pacific Brother <br />somos excelencia y sostenibilidad</h1>
+          <p class="hero-subtitle mb-4">
+            Nos enfocamos en generar relaciones de largo plazo basadas en confianza, transparencia y
+            eficiencia
+          </p>
+        </div>
+      </div>
+      <!-- La otra mitad queda “vacía” para respetar la composición visual -->
+      <div class="d-none d-lg-block col-lg-6"></div>
+    </div>
   </div>
 </section>

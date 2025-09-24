@@ -6,6 +6,7 @@
   position: relative;
   overflow: hidden;
   background: #fff;
+  padding-top: 120px;
 
   &::before {
     content: '';
@@ -13,14 +14,15 @@
     inset: 0 auto auto 0;
     width: 140%;
     height: 400px;
+    padding-top: 1000px;
     transform: translateX(-10%) translateY(-20%);
     background: linear-gradient(
       90deg,
       var(--tpb-turquoise),
-      var(--tpb-darkblue) 70%,
+      var(--tpb-darkblue) 90%,
       var(--tpb-navy)
     );
-    clip-path: polygon(0 30%, 100% 0, 100% 62%, 0 90%);
+    clip-path: polygon(0 0%, 100% 0, 100% 62%, 0 90%);
     z-index: 0;
   }
 
@@ -30,14 +32,6 @@
   }
 }
 
-/* Título con pesos mixtos */
-.hero-title {
-  text-transform: uppercase;
-  line-height: 0.95;
-  letter-spacing: 0.02em;
-  color: var(--tpb-navy);
-  margin: 0;
-}
 .hero-title .bold {
   font-weight: 800;
 }
