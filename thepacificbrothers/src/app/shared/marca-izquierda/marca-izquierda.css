@@ -1,4 +1,8 @@
 /* Marco blanco con sombra y borde interno azul */
+.container {
+  padding-bottom: 150px;
+}
+
 .about-media-card {
   position: relative;
   padding: 12px; /* grosor del marco blanco */

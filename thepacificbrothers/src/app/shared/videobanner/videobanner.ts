@@ -16,7 +16,7 @@ export class Videobanner implements AfterViewInit, OnDestroy {
   /** Alto del banner (ej. '80vh', '100dvh') */
   @Input() height = '90vh';
   /** Texto principal */
-  @Input() title = 'The Pacific Brother';
+  @Input() title = 'The Pacific Brothers';
   /** Subtítulo opcional */
   @Input() subtitle = 'Creatividad & Tecnología del Pacífico';
 
